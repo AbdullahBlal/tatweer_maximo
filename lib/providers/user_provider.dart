@@ -222,7 +222,7 @@ class UserNotifier extends StateNotifier<Map<String, dynamic>> {
     Codec<String, String> stringToBase64 = utf8.fuse(base64);
     final maxAuthEncoded = stringToBase64.encode(maxAuth);
 
-    final response = await _basicAuthLogin(maxAuthEncoded);
+    final response = await _LDAPLogin(maxAuthEncoded);
     final Map<String, dynamic> parsedResponse = json.decode(response.body);
     if (parsedResponse["apikey"] != null) {
       await saveApiKeyToSharedPreferences(parsedResponse["apikey"]);
