@@ -92,7 +92,8 @@ class PurchaseOrdersNotifier extends StateNotifier<List<PurchaseOrder>> {
     final List<Doclink> loadedDoclinks = [];
     for (final doclink in parsedResponse["member"]) {
       var href =
-          '${Constants.baseUrl}oslc/os/PRHTTP/$poid/doclinks/${doclink["describedBy"]["identifier"]}?lean=1';
+          '${Constants.baseUrl}oslc/os/POHTTP/$poid/doclinks/${doclink["describedBy"]["identifier"]}?lean=1';
+      print(href);
       loadedDoclinks.add(Doclink(
           ownerid: doclink["describedBy"]["ownerid"],
           docinfoid: doclink["describedBy"]["docinfoid"],
