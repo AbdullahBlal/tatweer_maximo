@@ -2,26 +2,26 @@
 abstract class Constants {
   static const String baseUrl = String.fromEnvironment(
     'BASE_URL',
-    defaultValue: 'https://fm.tatweermisr.com:443/maxrest/',
+    defaultValue: 'http://192.168.0.250/maxrest/',
   );
 
   static const String baseImageUrl = String.fromEnvironment(
     'BASE_IMAGE_URL',
-    defaultValue: 'https://fm.tatweermisr.com:443/maxrest/oslc/images/',
+    defaultValue: 'http://192.168.0.250/maxrest/maxrest/oslc/images/',
   );
 
   static const String baseWrongImageUrl = String.fromEnvironment(
     'BASE_WRONG_IMAGE_URL',
-    defaultValue: 'https://fm.tatweermisr.com:443',
+    defaultValue: 'http://192.168.0.250/maxrest',
   );
 
-  // static const String baseCorrectImageUrl = String.fromEnvironment(
-  //   'BASE_CORRECT_IMAGE_URL',
-  //   defaultValue: 'http://192.168.0.250',
-  // );
   static const String baseCorrectImageUrl = String.fromEnvironment(
     'BASE_CORRECT_IMAGE_URL',
-    defaultValue: 'https://fm.tatweermisr.com:443',
+    defaultValue: 'http://192.168.0.250',
   );
+  // static const String baseCorrectImageUrl = String.fromEnvironment(
+  //   'BASE_CORRECT_IMAGE_URL',
+  //   defaultValue: 'https://fm.tatweermisr.com:443',
+  // );
 
 }
