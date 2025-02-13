@@ -2,7 +2,9 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:tatweer_approval/screens/initial_screen.dart';
 import 'package:tatweer_approval/screens/login_screen/login_screen.dart';
+import 'package:tatweer_approval/screens/project_screen/project_index_screen.dart';
 import 'package:tatweer_approval/screens/splash_screen/splash_screen.dart';
 import 'package:tatweer_approval/screens/tabs_screen/tabs_screen.dart';
 import 'package:local_auth/local_auth.dart';
@@ -99,7 +101,7 @@ class _MainScreenState extends ConsumerState<MainScreen>
             return const SplashScreen(); // Display a splash screen when waiting for apikey.
           }
           if (snapshot.data == '') {
-            return const LoginScreen(); // Display login screen when apikey is not available.
+            return const InitialScreen(); // Display login screen when apikey is not available.
           }
           return const TabsScreen(); // Display tabs screen if apikey is available.
         });

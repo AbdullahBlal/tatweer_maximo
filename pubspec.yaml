@@ -53,6 +53,8 @@ dependencies:
   local_auth: ^2.2.0
   shared_preferences: ^2.2.3
   animated_refresh: ^1.0.0
+  video_player: ^2.7.2      # For video playback
+  carousel_slider: ^5.0.0
 
 dev_dependencies:
   flutter_test:
@@ -91,6 +93,31 @@ flutter:
     - assets/images/megasoft_copyrights_logo_dark.png
     - assets/images/purchase-request.png
     - assets/images/purchase-order.png
+    - assets/images/projects/salt/salt-project.png
+    - assets/images/projects/salt/salt-1.png
+    - assets/images/projects/salt/salt-2.png
+    - assets/images/projects/salt/salt-3.png
+    - assets/images/projects/rivers/rivers-logo.jpg
+    - assets/images/projects/rivers/rivers-1.jpg
+    - assets/images/projects/rivers/rivers-2.jpg
+    - assets/images/projects/rivers/rivers-3.jpg
+    - assets/images/projects/ilmontegalala/Il-monte-galala-logo.jpg
+    - assets/images/projects/fokkabay/fouka-bay-logo.jpg
+    - assets/images/projects/d-bay/d-bay-logo.jpg
+    - assets/images/projects/d-bay/d-bay-1.jpg
+    - assets/images/projects/d-bay/d-bay-2.jpg
+    - assets/images/projects/d-bay/d-bay-3.jpg
+    - assets/images/projects/bloomfields/bloomfields-logo.jpg
+    - assets/images/projects/bloomfields/bloomfields-1.jpg
+    - assets/images/projects/bloomfields/bloomfields-2.jpg
+    - assets/images/projects/bloomfields/bloomfields-3.jpg
+    - assets/images/logo-white.svg
+    - assets/images/logo-white.png
+    - assets/images/logo-white2.png
+    - assets/images/projects/fokkabay/fb-1.jpeg
+    - assets/images/projects/fokkabay/fb-2.jpg
+    - assets/images/projects/fokkabay/fb-3.jpg
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
