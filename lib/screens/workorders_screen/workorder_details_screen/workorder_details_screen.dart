@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:tatweer_approval/models/doclink.dart';
-import 'package:tatweer_approval/models/workorder.dart';
-import 'package:tatweer_approval/providers/user_provider.dart';
-import 'package:tatweer_approval/providers/workorders_provider.dart';
-import 'package:tatweer_approval/screens/workorders_screen/workorder_details_screen/additional_details/wo_additional_details_card.dart';
-import 'package:tatweer_approval/screens/workorders_screen/workorder_details_screen/wo_main_details_card.dart';
-import 'package:tatweer_approval/widgets/custom_progreess_indicator.dart';
+import 'package:tatweer_maximo/models/doclink.dart';
+import 'package:tatweer_maximo/models/workorder.dart';
+import 'package:tatweer_maximo/providers/user_provider.dart';
+import 'package:tatweer_maximo/providers/workorders_provider.dart';
+import 'package:tatweer_maximo/screens/workorders_screen/workorder_details_screen/additional_details/wo_additional_details_card.dart';
+import 'package:tatweer_maximo/screens/workorders_screen/workorder_details_screen/wo_main_details_card.dart';
+import 'package:tatweer_maximo/widgets/custom_progreess_indicator.dart';
 
 class WorkorderDetailsScreen extends ConsumerStatefulWidget {
   const WorkorderDetailsScreen({super.key, required this.workorder});

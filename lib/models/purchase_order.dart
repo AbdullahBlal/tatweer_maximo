@@ -1,5 +1,5 @@
-import 'package:tatweer_approval/models/purchase_order_line.dart';
-import 'package:tatweer_approval/reusable%20functions/number_formatter.dart';
+import 'package:tatweer_maximo/models/purchase_order_line.dart';
+import 'package:tatweer_maximo/reusable%20functions/number_formatter.dart';
 
 
 class PurchaseOrder {

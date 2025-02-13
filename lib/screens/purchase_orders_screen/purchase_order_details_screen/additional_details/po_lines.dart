@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tatweer_approval/models/purchase_order_line.dart';
+import 'package:tatweer_maximo/models/purchase_order_line.dart';
 import 'package:accordion/accordion.dart';
 import 'package:accordion/controllers.dart';
 

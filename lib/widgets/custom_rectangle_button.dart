@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tatweer_approval/widgets/custom_progreess_indicator.dart';
+import 'package:tatweer_maximo/widgets/custom_progreess_indicator.dart';
 
 class CustomRectangleButton extends StatelessWidget {
   const CustomRectangleButton(

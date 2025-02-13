@@ -1,4 +1,4 @@
-name: tatweer_approval
+name: tatweer_maximo
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -50,6 +50,7 @@ dependencies:
   local_auth: ^2.2.0
   shared_preferences: ^2.2.3
   animated_refresh: ^1.0.0
+  rename: ^3.0.2
 
 dev_dependencies:
   flutter_test:

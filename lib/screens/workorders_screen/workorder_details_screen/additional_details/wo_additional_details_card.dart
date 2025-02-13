@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:tatweer_approval/models/doclink.dart';
-import 'package:tatweer_approval/models/workorder.dart';
-import 'package:tatweer_approval/screens/workorders_screen/workorder_details_screen/additional_details/Wo_doclinks.dart';
-import 'package:tatweer_approval/screens/workorders_screen/workorder_details_screen/additional_details/wo_more_information.dart';
-import 'package:tatweer_approval/screens/workorders_screen/workorder_details_screen/additional_details/workorder%20plans/wo_plans.dart';
+import 'package:tatweer_maximo/models/doclink.dart';
+import 'package:tatweer_maximo/models/workorder.dart';
+import 'package:tatweer_maximo/screens/workorders_screen/workorder_details_screen/additional_details/Wo_doclinks.dart';
+import 'package:tatweer_maximo/screens/workorders_screen/workorder_details_screen/additional_details/wo_more_information.dart';
+import 'package:tatweer_maximo/screens/workorders_screen/workorder_details_screen/additional_details/workorder%20plans/wo_plans.dart';
 
 class WOAdditionalDetailsCard extends StatelessWidget {
   const WOAdditionalDetailsCard({super.key, required this.workorderDoclinks, required this.workorder});

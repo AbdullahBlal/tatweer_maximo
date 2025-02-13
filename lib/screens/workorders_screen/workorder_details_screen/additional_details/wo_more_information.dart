@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tatweer_approval/models/workorder.dart';
+import 'package:tatweer_maximo/models/workorder.dart';
 
 class WoMoreInformation extends StatelessWidget {
   const WoMoreInformation({super.key, required this.workorder});

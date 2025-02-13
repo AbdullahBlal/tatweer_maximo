@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:badges/badges.dart' as badges;
-import 'package:tatweer_approval/models/main_card.dart';
+import 'package:tatweer_maximo/models/main_card.dart';
 
 class HomeScreenCard extends StatelessWidget {
   const HomeScreenCard(

@@ -1,6 +1,6 @@
 import 'package:intl/intl.dart';
-import 'package:tatweer_approval/models/purchase_request_line.dart';
-import 'package:tatweer_approval/reusable%20functions/number_formatter.dart';
+import 'package:tatweer_maximo/models/purchase_request_line.dart';
+import 'package:tatweer_maximo/reusable%20functions/number_formatter.dart';
 
 final formatter = DateFormat.yMd();
 
