@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:tatweer_approval/models/doclink.dart';
-import 'package:tatweer_approval/models/purchase_request.dart';
-import 'package:tatweer_approval/screens/purchase_requests_screen/purchase_request_details_screen/additional_details/pr_doclinks.dart';
-import 'package:tatweer_approval/screens/purchase_requests_screen/purchase_request_details_screen/additional_details/pr_lines.dart';
-import 'package:tatweer_approval/screens/purchase_requests_screen/purchase_request_details_screen/additional_details/pr_more_information.dart';
+import 'package:tatweer_maximo/models/doclink.dart';
+import 'package:tatweer_maximo/models/purchase_request.dart';
+import 'package:tatweer_maximo/screens/purchase_requests_screen/purchase_request_details_screen/additional_details/pr_doclinks.dart';
+import 'package:tatweer_maximo/screens/purchase_requests_screen/purchase_request_details_screen/additional_details/pr_lines.dart';
+import 'package:tatweer_maximo/screens/purchase_requests_screen/purchase_request_details_screen/additional_details/pr_more_information.dart';
 
 class PRAdditionalDetailsCard extends StatelessWidget {
   const PRAdditionalDetailsCard({super.key, required this.purchaseRequestDoclinks, required this.purchaseRequest});

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tatweer_approval/widgets/custom_rectangle_button.dart';
-import 'package:tatweer_approval/widgets/login_form_input.dart';
+import 'package:tatweer_maximo/widgets/custom_rectangle_button.dart';
+import 'package:tatweer_maximo/widgets/login_form_input.dart';
 
 class LoginForm extends StatefulWidget {
   const LoginForm({super.key, required this.onLogIn});

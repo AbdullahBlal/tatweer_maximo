@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:http/http.dart' as http;
-import 'package:tatweer_approval/models/security_group.dart';
+import 'package:tatweer_maximo/models/security_group.dart';
 import '../constants.dart';
 import '../screens/main_screen/main_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';

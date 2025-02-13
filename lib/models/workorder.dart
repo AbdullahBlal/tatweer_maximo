@@ -1,8 +1,8 @@
-import 'package:tatweer_approval/models/workorder_feecharge.dart';
-import 'package:tatweer_approval/models/workorder_material.dart';
-import 'package:tatweer_approval/models/workorder_service.dart';
-import 'package:tatweer_approval/reusable%20functions/datetime_format.dart';
-import 'package:tatweer_approval/reusable%20functions/number_formatter.dart';
+import 'package:tatweer_maximo/models/workorder_feecharge.dart';
+import 'package:tatweer_maximo/models/workorder_material.dart';
+import 'package:tatweer_maximo/models/workorder_service.dart';
+import 'package:tatweer_maximo/reusable%20functions/datetime_format.dart';
+import 'package:tatweer_maximo/reusable%20functions/number_formatter.dart';
 class Workorder {
   const Workorder({
     required this.workorderid,

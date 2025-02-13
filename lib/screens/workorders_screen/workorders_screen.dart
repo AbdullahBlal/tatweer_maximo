@@ -1,8 +1,8 @@
 import 'package:animated_refresh/animated_refresh.dart';
 import 'package:flutter/material.dart';
-import 'package:tatweer_approval/models/workorder.dart';
-import 'package:tatweer_approval/screens/workorders_screen/workorder_details_screen/workorder_details_screen.dart';
-import 'package:tatweer_approval/widgets/custom_progreess_indicator.dart';
+import 'package:tatweer_maximo/models/workorder.dart';
+import 'package:tatweer_maximo/screens/workorders_screen/workorder_details_screen/workorder_details_screen.dart';
+import 'package:tatweer_maximo/widgets/custom_progreess_indicator.dart';
 
 class WorkordersScreen extends StatelessWidget {
   const WorkordersScreen({

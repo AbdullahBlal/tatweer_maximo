@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tatweer_approval/models/purchase_order.dart';
+import 'package:tatweer_maximo/models/purchase_order.dart';
 import '../reusable functions/full_text_content.dart';
 
 class PurchaseOrderListItem extends StatelessWidget {

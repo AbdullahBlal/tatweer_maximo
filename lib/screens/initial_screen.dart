@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tatweer_approval/screens/login_screen/login_screen.dart';
-import 'package:tatweer_approval/screens/project_screen/project_index_screen.dart';
+import 'package:tatweer_maximo/screens/login_screen/login_screen.dart';
+import 'package:tatweer_maximo/screens/project_screen/project_index_screen.dart';
 
 class InitialScreen extends StatefulWidget {
   const InitialScreen({super.key});

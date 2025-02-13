@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:tatweer_approval/models/project.dart';
-import 'package:tatweer_approval/screens/project_screen/project_details_screen.dart';
-import 'package:tatweer_approval/screens/login_screen/login_screen.dart'; // Import Login Screen
+import 'package:tatweer_maximo/models/project.dart';
+import 'package:tatweer_maximo/screens/project_screen/project_details_screen.dart';
+import 'package:tatweer_maximo/screens/login_screen/login_screen.dart'; // Import Login Screen
 
 class ProjectIndexScreen extends StatelessWidget {
   const ProjectIndexScreen({super.key, required this.toggleScreen});

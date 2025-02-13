@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tatweer_approval/widgets/search_input.dart';
+import 'package:tatweer_maximo/widgets/search_input.dart';
 
 class MainAppBarContent extends StatelessWidget {
   const MainAppBarContent({super.key, required this.itemSelected, required this.onSearchTextChange});

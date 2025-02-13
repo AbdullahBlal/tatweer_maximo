@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:tatweer_approval/models/security_group.dart';
-import 'package:tatweer_approval/providers/user_provider.dart';
-import 'package:tatweer_approval/widgets/custom_progreess_indicator.dart';
+import 'package:tatweer_maximo/models/security_group.dart';
+import 'package:tatweer_maximo/providers/user_provider.dart';
+import 'package:tatweer_maximo/widgets/custom_progreess_indicator.dart';
 import 'package:placeholder_images/placeholder_images.dart';
 
 class SideDrawer extends ConsumerStatefulWidget {

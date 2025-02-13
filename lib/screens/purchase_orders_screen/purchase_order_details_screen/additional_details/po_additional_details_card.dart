@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:tatweer_approval/models/doclink.dart';
-import 'package:tatweer_approval/models/purchase_order.dart';
-import 'package:tatweer_approval/screens/purchase_orders_screen/purchase_order_details_screen/additional_details/po_doclinks.dart';
-import 'package:tatweer_approval/screens/purchase_orders_screen/purchase_order_details_screen/additional_details/po_lines.dart';
-import 'package:tatweer_approval/screens/purchase_orders_screen/purchase_order_details_screen/additional_details/po_more_information.dart';
+import 'package:tatweer_maximo/models/doclink.dart';
+import 'package:tatweer_maximo/models/purchase_order.dart';
+import 'package:tatweer_maximo/screens/purchase_orders_screen/purchase_order_details_screen/additional_details/po_doclinks.dart';
+import 'package:tatweer_maximo/screens/purchase_orders_screen/purchase_order_details_screen/additional_details/po_lines.dart';
+import 'package:tatweer_maximo/screens/purchase_orders_screen/purchase_order_details_screen/additional_details/po_more_information.dart';
 
 class POAdditionalDetailsCard extends StatelessWidget {
   const POAdditionalDetailsCard({super.key, required this.purchaseOrderDoclinks, required this.purchaseOrder});

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:tatweer_approval/models/workorder.dart';
-import 'package:tatweer_approval/providers/user_provider.dart';
-import 'package:tatweer_approval/providers/workorders_provider.dart';
-import 'package:tatweer_approval/widgets/custom_text_area_field.dart';
+import 'package:tatweer_maximo/models/workorder.dart';
+import 'package:tatweer_maximo/providers/user_provider.dart';
+import 'package:tatweer_maximo/providers/workorders_provider.dart';
+import 'package:tatweer_maximo/widgets/custom_text_area_field.dart';
 
 class WOMainDetailsCard extends ConsumerStatefulWidget {
   const WOMainDetailsCard({required this.workorder, super.key});

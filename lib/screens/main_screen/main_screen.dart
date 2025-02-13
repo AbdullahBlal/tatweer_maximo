@@ -2,11 +2,11 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:tatweer_approval/screens/initial_screen.dart';
-import 'package:tatweer_approval/screens/login_screen/login_screen.dart';
-import 'package:tatweer_approval/screens/project_screen/project_index_screen.dart';
-import 'package:tatweer_approval/screens/splash_screen/splash_screen.dart';
-import 'package:tatweer_approval/screens/tabs_screen/tabs_screen.dart';
+import 'package:tatweer_maximo/screens/initial_screen.dart';
+import 'package:tatweer_maximo/screens/login_screen/login_screen.dart';
+import 'package:tatweer_maximo/screens/project_screen/project_index_screen.dart';
+import 'package:tatweer_maximo/screens/splash_screen/splash_screen.dart';
+import 'package:tatweer_maximo/screens/tabs_screen/tabs_screen.dart';
 import 'package:local_auth/local_auth.dart';
 import '../../providers/user_provider.dart';
 

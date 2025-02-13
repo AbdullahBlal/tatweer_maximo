@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:accordion/accordion.dart';
 import 'package:accordion/controllers.dart';
-import 'package:tatweer_approval/models/workorder_feecharge.dart';
+import 'package:tatweer_maximo/models/workorder_feecharge.dart';
 
 class WoFeeCharges extends StatelessWidget {
   const WoFeeCharges({super.key, required this.woFeeCharges});

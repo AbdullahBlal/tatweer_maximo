@@ -1,10 +1,10 @@
 import 'dart:convert';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:http/http.dart' as http;
-import 'package:tatweer_approval/constants.dart';
-import 'package:tatweer_approval/models/doclink.dart';
-import 'package:tatweer_approval/models/purchase_request.dart';
-import 'package:tatweer_approval/models/purchase_request_line.dart';
+import 'package:tatweer_maximo/constants.dart';
+import 'package:tatweer_maximo/models/doclink.dart';
+import 'package:tatweer_maximo/models/purchase_request.dart';
+import 'package:tatweer_maximo/models/purchase_request_line.dart';
 
 class PurchaseRequestsNotifier extends StateNotifier<List<PurchaseRequest>> {
   PurchaseRequestsNotifier() : super([]);

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tatweer_approval/models/doclink.dart';
-import 'package:tatweer_approval/screens/purchase_requests_screen/purchase_request_details_screen/additional_details/pr_doclinks_item.dart';
+import 'package:tatweer_maximo/models/doclink.dart';
+import 'package:tatweer_maximo/screens/purchase_requests_screen/purchase_request_details_screen/additional_details/pr_doclinks_item.dart';
 
 class PrDoclinks extends StatelessWidget {
   const PrDoclinks({super.key, required this.purchaseRequestDoclinks});

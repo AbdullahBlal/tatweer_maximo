@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:tatweer_approval/models/purchase_request.dart';
-import 'package:tatweer_approval/providers/purchase_request_provider.dart';
-import 'package:tatweer_approval/providers/user_provider.dart';
-import 'package:tatweer_approval/reusable%20functions/datetime_format.dart';
-import 'package:tatweer_approval/widgets/custom_text_area_field.dart';
+import 'package:tatweer_maximo/models/purchase_request.dart';
+import 'package:tatweer_maximo/providers/purchase_request_provider.dart';
+import 'package:tatweer_maximo/providers/user_provider.dart';
+import 'package:tatweer_maximo/reusable%20functions/datetime_format.dart';
+import 'package:tatweer_maximo/widgets/custom_text_area_field.dart';
 
 class PRMainDetailsCard extends ConsumerStatefulWidget {
   const PRMainDetailsCard({required this.purchaseRequest, super.key});

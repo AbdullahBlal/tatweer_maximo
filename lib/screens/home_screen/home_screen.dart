@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 // import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:tatweer_approval/models/main_card.dart';
-import 'package:tatweer_approval/screens/home_screen/home_screen_card.dart';
-// import 'package:tatweer_approval/screens/home_screen/home_screen_counter.dart';
-import 'package:tatweer_approval/widgets/custom_progreess_indicator.dart';
+import 'package:tatweer_maximo/models/main_card.dart';
+import 'package:tatweer_maximo/screens/home_screen/home_screen_card.dart';
+// import 'package:tatweer_maximo/screens/home_screen/home_screen_counter.dart';
+import 'package:tatweer_maximo/widgets/custom_progreess_indicator.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen(

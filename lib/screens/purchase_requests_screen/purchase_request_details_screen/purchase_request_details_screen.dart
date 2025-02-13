@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:tatweer_approval/models/doclink.dart';
-import 'package:tatweer_approval/models/purchase_request.dart';
-import 'package:tatweer_approval/providers/purchase_request_provider.dart';
-import 'package:tatweer_approval/providers/user_provider.dart';
-import 'package:tatweer_approval/screens/purchase_requests_screen/purchase_request_details_screen/additional_details/pr_additional_details_card.dart';
-import 'package:tatweer_approval/screens/purchase_requests_screen/purchase_request_details_screen/pr_main_details_card.dart';
-import 'package:tatweer_approval/widgets/custom_progreess_indicator.dart';
+import 'package:tatweer_maximo/models/doclink.dart';
+import 'package:tatweer_maximo/models/purchase_request.dart';
+import 'package:tatweer_maximo/providers/purchase_request_provider.dart';
+import 'package:tatweer_maximo/providers/user_provider.dart';
+import 'package:tatweer_maximo/screens/purchase_requests_screen/purchase_request_details_screen/additional_details/pr_additional_details_card.dart';
+import 'package:tatweer_maximo/screens/purchase_requests_screen/purchase_request_details_screen/pr_main_details_card.dart';
+import 'package:tatweer_maximo/widgets/custom_progreess_indicator.dart';
 
 class PurchaseRequestDetailsScreen extends ConsumerStatefulWidget {
   const PurchaseRequestDetailsScreen(

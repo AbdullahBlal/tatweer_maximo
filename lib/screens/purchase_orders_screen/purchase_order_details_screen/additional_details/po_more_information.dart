@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tatweer_approval/models/purchase_order.dart';
+import 'package:tatweer_maximo/models/purchase_order.dart';
 
 class PoMoreInformation extends StatelessWidget {
   const PoMoreInformation({super.key, required this.purchaseOrder});

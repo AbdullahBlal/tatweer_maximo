@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:tatweer_approval/screens/project_screen/project_index_screen.dart';
+import 'package:tatweer_maximo/screens/project_screen/project_index_screen.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'login_form.dart';
-import 'package:tatweer_approval/screens/main_screen/main_screen.dart';
+import 'package:tatweer_maximo/screens/main_screen/main_screen.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../providers/user_provider.dart';
 

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:tatweer_approval/screens/main_screen/main_screen.dart';
+import 'package:tatweer_maximo/screens/main_screen/main_screen.dart';
 // import 'package:flutter_downloader/flutter_downloader.dart';
 
 var kColorScheme = ColorScheme.fromSeed(

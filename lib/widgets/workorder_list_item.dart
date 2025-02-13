@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tatweer_approval/models/workorder.dart';
-import 'package:tatweer_approval/reusable%20functions/full_text_content.dart';
+import 'package:tatweer_maximo/models/workorder.dart';
+import 'package:tatweer_maximo/reusable%20functions/full_text_content.dart';
 
 class WorkorderListItem extends StatelessWidget {
   const WorkorderListItem(this.workorder, {super.key});

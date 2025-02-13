@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tatweer_approval/reusable%20functions/number_formatter.dart';
+import 'package:tatweer_maximo/reusable%20functions/number_formatter.dart';
 
 class HomeScreenCounter extends StatelessWidget {
   const HomeScreenCounter({super.key});

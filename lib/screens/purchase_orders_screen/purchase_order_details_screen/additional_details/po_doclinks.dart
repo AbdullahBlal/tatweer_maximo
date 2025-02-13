@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tatweer_approval/models/doclink.dart';
-import 'package:tatweer_approval/screens/purchase_orders_screen/purchase_order_details_screen/additional_details/po_doclinks_item.dart';
+import 'package:tatweer_maximo/models/doclink.dart';
+import 'package:tatweer_maximo/screens/purchase_orders_screen/purchase_order_details_screen/additional_details/po_doclinks_item.dart';
 
 class PoDoclinks extends StatelessWidget {
   const PoDoclinks({super.key, required this.purchaseOrderDoclinks});

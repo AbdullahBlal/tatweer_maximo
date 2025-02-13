@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:tatweer_approval/models/doclink.dart';
+import 'package:tatweer_maximo/models/doclink.dart';
 import 'dart:io';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:tatweer_approval/providers/user_provider.dart';
+import 'package:tatweer_maximo/providers/user_provider.dart';
 import 'package:dio/dio.dart';
-import 'package:tatweer_approval/widgets/custom_progreess_indicator.dart';
+import 'package:tatweer_maximo/widgets/custom_progreess_indicator.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:http/http.dart' as http;
 import 'package:open_file/open_file.dart';

@@ -1,8 +1,8 @@
 import 'package:animated_refresh/animated_refresh.dart';
 import 'package:flutter/material.dart';
-import 'package:tatweer_approval/models/purchase_order.dart';
-import 'package:tatweer_approval/screens/purchase_orders_screen/purchase_order_details_screen/purchase_order_details_screen.dart';
-import 'package:tatweer_approval/widgets/custom_progreess_indicator.dart';
+import 'package:tatweer_maximo/models/purchase_order.dart';
+import 'package:tatweer_maximo/screens/purchase_orders_screen/purchase_order_details_screen/purchase_order_details_screen.dart';
+import 'package:tatweer_maximo/widgets/custom_progreess_indicator.dart';
 
 class PurchaseOrdersScreen extends StatelessWidget {
   const PurchaseOrdersScreen({

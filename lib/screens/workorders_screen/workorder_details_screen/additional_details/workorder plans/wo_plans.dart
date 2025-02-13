@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:tatweer_approval/models/workorder.dart';
-import 'package:tatweer_approval/screens/workorders_screen/workorder_details_screen/additional_details/workorder%20plans/wo_feecharges.dart';
-import 'package:tatweer_approval/screens/workorders_screen/workorder_details_screen/additional_details/workorder%20plans/wo_materials.dart';
-import 'package:tatweer_approval/screens/workorders_screen/workorder_details_screen/additional_details/workorder%20plans/wo_services.dart';
+import 'package:tatweer_maximo/models/workorder.dart';
+import 'package:tatweer_maximo/screens/workorders_screen/workorder_details_screen/additional_details/workorder%20plans/wo_feecharges.dart';
+import 'package:tatweer_maximo/screens/workorders_screen/workorder_details_screen/additional_details/workorder%20plans/wo_materials.dart';
+import 'package:tatweer_maximo/screens/workorders_screen/workorder_details_screen/additional_details/workorder%20plans/wo_services.dart';
 
 class WOPlans extends StatefulWidget {
   const WOPlans({super.key, required this.workorder});

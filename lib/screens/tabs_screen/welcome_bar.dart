@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:tatweer_approval/widgets/custom_progreess_indicator.dart';
+import 'package:tatweer_maximo/widgets/custom_progreess_indicator.dart';
 import 'package:placeholder_images/placeholder_images.dart';
 
 import '../../providers/user_provider.dart';

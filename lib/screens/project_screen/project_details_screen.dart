@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:video_player/video_player.dart';
-import 'package:tatweer_approval/models/project.dart';
+import 'package:tatweer_maximo/models/project.dart';
 
 class ProjectDetailsScreen extends StatefulWidget {
   final Project project;
