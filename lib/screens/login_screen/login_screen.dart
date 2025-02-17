@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:tatweer_maximo/screens/project_screen/project_index_screen.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'login_form.dart';
 import 'package:tatweer_maximo/screens/main_screen/main_screen.dart';
@@ -77,7 +76,7 @@ class LoginScreen extends ConsumerWidget {
                     //       builder: (context) => const ProjectIndexScreen()),
                     //   (route) => false, // Removes all previous routes
                     // );
-                    toggleScreen();
+                    toggleScreen("projects");
                   },
                   icon: const Icon(Icons.home, color: Colors.black, size: 18),
                   label: const Text(
@@ -120,6 +119,29 @@ class LoginScreen extends ConsumerWidget {
                           Function disableLoginSpinner) {
                         logIn(context, username, password, disableLoginSpinner);
                       },
+                    ),
+                    // New Text: "Don't have an account?" with "SIGN UP"
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const Text(
+                          "Don't have an account?",
+                          style: TextStyle(fontSize: 14, color: Colors.black),
+                        ),
+                        TextButton(
+                          onPressed: () {
+                            toggleScreen("signup");
+                          },
+                          child: const Text(
+                            "SIGN UP",
+                            style: TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.red, // Highlight color
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                     const SizedBox(height: 10),
                     Row(

@@ -23,7 +23,8 @@ final theme = ThemeData(
   ),
   textTheme: GoogleFonts.geologicaTextTheme(),
 );
-
+final GlobalKey<ScaffoldMessengerState> rootScaffoldMessengerKey =
+    GlobalKey<ScaffoldMessengerState>();
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations([
@@ -32,6 +33,7 @@ void main() async {
     runApp(
       ProviderScope(
         child: MaterialApp(
+          scaffoldMessengerKey: rootScaffoldMessengerKey,
           debugShowCheckedModeBanner: false,
           theme: theme,
           home: const MainScreen(),

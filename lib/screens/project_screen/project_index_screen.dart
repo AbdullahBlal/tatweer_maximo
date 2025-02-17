@@ -42,7 +42,7 @@ class ProjectIndexScreen extends StatelessWidget {
               //   (route) => false, // Removes all previous routes
               // );
 
-              toggleScreen();
+              toggleScreen("login");
             },
             icon: const Icon(Icons.login, color: Colors.white, size: 18),
             label: const Text(
