@@ -120,29 +120,29 @@ class LoginScreen extends ConsumerWidget {
                         logIn(context, username, password, disableLoginSpinner);
                       },
                     ),
-                    // New Text: "Don't have an account?" with "SIGN UP"
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const Text(
-                          "Don't have an account?",
-                          style: TextStyle(fontSize: 14, color: Colors.black),
-                        ),
-                        TextButton(
-                          onPressed: () {
-                            toggleScreen("signup");
-                          },
-                          child: const Text(
-                            "SIGN UP",
-                            style: TextStyle(
-                              fontSize: 14,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.red, // Highlight color
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
+                    // // New Text: "Don't have an account?" with "SIGN UP"
+                    // Row(
+                    //   mainAxisAlignment: MainAxisAlignment.center,
+                    //   children: [
+                    //     const Text(
+                    //       "Don't have an account?",
+                    //       style: TextStyle(fontSize: 14, color: Colors.black),
+                    //     ),
+                    //     TextButton(
+                    //       onPressed: () {
+                    //         toggleScreen("signup");
+                    //       },
+                    //       child: const Text(
+                    //         "SIGN UP",
+                    //         style: TextStyle(
+                    //           fontSize: 14,
+                    //           fontWeight: FontWeight.bold,
+                    //           color: Colors.red, // Highlight color
+                    //         ),
+                    //       ),
+                    //     ),
+                    //   ],
+                    // ),
                     const SizedBox(height: 10),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
