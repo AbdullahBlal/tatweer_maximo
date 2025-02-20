@@ -21,7 +21,7 @@ class PurchaseRequestsNotifier extends StateNotifier<List<PurchaseRequest>> {
   Future<http.Response> loadPurchaseRequests(String apikey, String mobileSC) async{
     return http.get(
         Uri.parse(
-            '${Constants.baseUrl}oslc/os/PRHTTP?lean=1&savedQuery=${quiriesBasedOnGroup[mobileSC]}&oslc.select=prnum,prtype,description,prid,dept,status,project.value,project.description,totalcost,statusdate,issuedate,chargetoorganization,vendor,companies.name,prline{prlineid,prlinenum,linetype,description,orderqty,unitcost,tax1code,tax1,loadedcost,person.displayname,storeloc,gldebitacct}'),
+            '${Constants.baseUrl}oslc/os/PRHTTP?lean=1&savedQuery=${quiriesBasedOnGroup[mobileSC]}&oslc.select=prnum,prtype,priority,priorityreason,description,prid,dept,status,project.value,project.description,totalcost,currencycode,statusdate,issuedate,chargetoorganization,vendor,companies.name,prline{prlineid,prlinenum,linetype,description,orderqty,unitcost,tax1code,tax1,loadedcost,person.displayname,storeloc,gldebitacct}&oslc.orderBy=-issuedate'),
         headers: <String, String>{
           'apikey': apikey,
         });
@@ -147,9 +147,12 @@ class PurchaseRequestsNotifier extends StateNotifier<List<PurchaseRequest>> {
     final Map<String, dynamic> parsedResponse = json.decode(response.body);
     final List<PurchaseRequest> loadedPurchaseRequests = [];
     for (final purchaseRequest in parsedResponse["member"]) {
+    print(purchaseRequest["priorityreason"]);
       loadedPurchaseRequests.add(PurchaseRequest(
         prid: purchaseRequest["prid"],
         prnum: purchaseRequest["prnum"],
+        priority: purchaseRequest["priority"],
+        priorityReason: purchaseRequest["priorityreason"] ?? '',
         prtype: purchaseRequest["prtype"] ?? '',
         prtypeDescription: purchaseRequest["prtype_description"] ?? '',
         description: purchaseRequest["description"] ?? '',
@@ -162,6 +165,7 @@ class PurchaseRequestsNotifier extends StateNotifier<List<PurchaseRequest>> {
         chargeToOrgnization: purchaseRequest["chargetoorganization"] ?? '',
         project: purchaseRequest["project"]["value"] ?? '',
         projectDescription: purchaseRequest["project"]["description"] ?? '',
+        currencyCode: purchaseRequest["currencycode"],
         totalCost: purchaseRequest["totalcost"],
         prLines: _setPrLines(purchaseRequest["prline"]),
         statusDate: purchaseRequest["statusdate"] != null

@@ -57,7 +57,7 @@ class POAdditionalDetailsCard extends StatelessWidget {
             body: TabBarView(
               children: [
                 PoMoreInformation(purchaseOrder:purchaseOrder),
-                PoLines(poLines: purchaseOrder.poLines),
+                PoLines(poLines: purchaseOrder.poLines, currencyCode: purchaseOrder.currencyCode),
                 PoDoclinks(purchaseOrderDoclinks: purchaseOrderDoclinks),
               ],
             ),

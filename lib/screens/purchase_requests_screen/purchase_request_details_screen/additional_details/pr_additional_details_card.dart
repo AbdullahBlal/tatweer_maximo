@@ -57,7 +57,7 @@ class PRAdditionalDetailsCard extends StatelessWidget {
             body: TabBarView(
               children: [
                 PrMoreInformation(purchaseRequest:purchaseRequest),
-                PrLines(prLines: purchaseRequest.prLines),
+                PrLines(prLines: purchaseRequest.prLines, currencyCode:purchaseRequest.currencyCode),
                 PrDoclinks(purchaseRequestDoclinks: purchaseRequestDoclinks),
               ],
             ),

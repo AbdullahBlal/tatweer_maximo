@@ -263,7 +263,7 @@ class _POMainDetailsCardState extends ConsumerState<POMainDetailsCard> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    const Text('EGP', style: TextStyle(fontSize: 15)),
+                    Text(widget.purchaseOrder.currencyCode, style: const TextStyle(fontSize: 15)),
                     Text(
                       widget.purchaseOrder.toStringTotalCost,
                       style: const TextStyle(fontSize: 25),

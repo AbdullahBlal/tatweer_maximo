@@ -20,7 +20,7 @@ class PurchaseOrdersNotifier extends StateNotifier<List<PurchaseOrder>> {
   Future<http.Response> loadPurchaseOrders(String apikey, String mobileSC) {
     return http.get(
         Uri.parse(
-            '${Constants.baseUrl}oslc/os/POHTTP?lean=1&savedQuery=${quiriesBasedOnGroup[mobileSC]}&oslc.select=ponum,potypee,description,poid,dept,status,project,totalcost,chargetoorganization,purchaseagent,vendor,statusdate,orderdate,paymentterms,poline{polineid,polinenum,linetype,description,orderqty,unitcost,tax1code,tax1,loadedcost,person.displayname,storeloc,gldebitacct}&ignorekeyref=1&ignorers=1&ignorecollectionref=1'),
+            '${Constants.baseUrl}oslc/os/POHTTP?lean=1&savedQuery=${quiriesBasedOnGroup[mobileSC]}&oslc.select=ponum,potypee,purchaseagent,description,orderdate,poid,dept,status,currencycode,totalcost,chargetoorganization,purchaseagent,vendor,statusdate,paymentterms,rel.project{value,description},poline{polineid,polinenum,linetype,description,orderqty,unitcost,tax1code,tax1,loadedcost,person.displayname,storeloc,gldebitacct,disapplied,orglinecost}&ignorekeyref=1&ignorers=1&ignorecollectionref=1&oslc.orderBy=-orderdate'),
         headers: <String, String>{
           'apikey': apikey,
         });
@@ -131,6 +131,8 @@ class PurchaseOrdersNotifier extends StateNotifier<List<PurchaseOrder>> {
           unitCost: purchaseOrderLine["unitcost"],
           vat: purchaseOrderLine["tax1"],
           loadedCost: purchaseOrderLine["loadedcost"],
+          isDiscountApplied: purchaseOrderLine["disapplied"],
+          originallineCost: purchaseOrderLine["orglinecost"] ?? 0.0,
           requestedByName: purchaseOrderLine["person"]["displayname"] ?? '',
           storeloc: purchaseOrderLine["storeloc"] ?? '',
           glAccount: purchaseOrderLine["gldebitacct"] ?? ''
@@ -157,11 +159,13 @@ class PurchaseOrdersNotifier extends StateNotifier<List<PurchaseOrder>> {
         vendor: purchaseOrder["vendor"] ?? '',
         vendorDescription: purchaseOrder["vendor"] ?? '', // not available in the main call
         chargeToOrgnization: purchaseOrder["chargetoorganization"] ?? '',
-        project: purchaseOrder["project"] ?? '',
-        projectDescription: purchaseOrder["project"] ?? '', // not available in the main call
+        buyer: purchaseOrder["purchaseagent"] ?? '',
+        project: purchaseOrder["project"][0]["value"] ?? '',
+        projectDescription: purchaseOrder["project"][0]["description"] ?? '',
         purchaseAgent: purchaseOrder["purchaseagent"] ?? '',
         paymentTerms: purchaseOrder["paymentterms"] ?? '',
         paymentTermsDetails: purchaseOrder["paymentterms_description"] ?? '',
+        currencyCode: purchaseOrder["currencycode"],
         totalCost: purchaseOrder["totalcost"],
         potype: purchaseOrder["potypee"] ?? '',
         potypeDescription: purchaseOrder["potypee_description"] ?? '',

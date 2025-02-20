@@ -4,8 +4,9 @@ import 'package:accordion/accordion.dart';
 import 'package:accordion/controllers.dart';
 
 class PoLines extends StatelessWidget {
-  const PoLines({super.key, required this.poLines});
+  const PoLines({super.key, required this.poLines, required this.currencyCode});
 
+  final String currencyCode;
   final List<PurchaseOrderLine> poLines;
 
   @override
@@ -193,7 +194,11 @@ class PoLines extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
-                        const Text('EGP', style: TextStyle(fontSize: 15)),
+                        Text(currencyCode, style: const TextStyle(fontSize: 15)),
+                        poLine.isDiscountApplied?Text(
+                          poLine.toStringOriginallineCost,
+                          style: TextStyle(fontSize: 15,decoration: TextDecoration.lineThrough, decorationColor: Theme.of(context).colorScheme.secondary, decorationThickness: 4),
+                        ):const SizedBox.shrink(),
                         Text(
                           poLine.toStringLoadedCost,
                           style: const TextStyle(fontSize: 25),

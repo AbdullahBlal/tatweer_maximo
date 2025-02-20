@@ -9,12 +9,14 @@ class PurchaseOrder {
     required this.potype,
     required this.potypeDescription,
     required this.description,
+    required this.buyer,
     required this.status,
     required this.statusDescription,
     required this.department,
     required this.departmentDescription,
     required this.project,
     required this.projectDescription,
+    required this.currencyCode,
     required this.totalCost,
     required this.chargeToOrgnization,
     required this.purchaseAgent,
@@ -31,6 +33,7 @@ class PurchaseOrder {
   final int poid;
   final String ponum;
   final String potype;
+  final String buyer;
   final String potypeDescription;
   final String description;
   final String status;
@@ -39,6 +42,7 @@ class PurchaseOrder {
   final String departmentDescription;
   final String project;
   final String projectDescription;
+  final String currencyCode;
   final double totalCost;
   final String chargeToOrgnization;
   final String purchaseAgent;

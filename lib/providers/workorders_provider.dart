@@ -22,7 +22,7 @@ class WorkordersNotifier extends StateNotifier<List<Workorder>> {
   Future<http.Response> loadWorkorders(String apikey, String mobileSC) {
     return http.get(
         Uri.parse(
-            '${Constants.baseUrl}oslc/os/WOHTTP?lean=1&savedQuery=${quiriesBasedOnGroup[mobileSC]}&oslc.select=wonum,vendor,schedstart,description,workorderid,worktype,status,reportdate,estmatcost,wodepartments,owner,supervisor,ownergroup.description,pluspwopricetotals.estimatedtotalprice,rel.location{location,description,unit},rel.wpitem{location,description,itemqty,unitcost,linecost,plusplineprice},rel.wpservice{description,itemqty,plusplineprice},rel.pluspwpgenbill{type,description,lineprice}&ignorekeyref=1&ignorers=1&ignorecollectionref=1'),
+            '${Constants.baseUrl}oslc/os/WOHTTP?lean=1&savedQuery=${quiriesBasedOnGroup[mobileSC]}&oslc.select=wonum,vendor,schedstart,description,workorderid,worktype,status,reportdate,estmatcost,wodepartments,owner,supervisor,ownergroup.description,rel.pluspwopricetotals{estimatedtotalprice,estsrvprice,estfeeprice},rel.location{location,description,unit},rel.wpmaterialonly{location,description,itemqty,unitcost,linecost,plusplineprice},rel.wpservice{description,itemqty,plusplineprice},rel.pluspwpgenbill{type,description,lineprice}&ignorekeyref=1&ignorers=1&ignorecollectionref=1&oslc.orderBy=-reportdate'),
         headers: <String, String>{
           'apikey': apikey,
         });
@@ -127,8 +127,8 @@ class WorkordersNotifier extends StateNotifier<List<Workorder>> {
     List<WorkorderFeeCharge> woFeeCharges = [];
 
     for (final workorder in parsedResponse["member"]) {
-      if (workorder["wpitem"] != null) {
-        for (final material in workorder["wpitem"]) {
+      if (workorder["wpmaterialonly"] != null) {
+        for (final material in workorder["wpmaterialonly"]) {
           woMaterials.add(
             WorkorderMaterial(
               description: material["description"],
@@ -165,6 +165,7 @@ class WorkordersNotifier extends StateNotifier<List<Workorder>> {
           );
         }
       }
+      print(workorder["pluspwopricetotals"]);
       loadedWorkorders.add(Workorder(
           workorderid: workorder["workorderid"],
           wonum: workorder["wonum"],
@@ -181,7 +182,9 @@ class WorkordersNotifier extends StateNotifier<List<Workorder>> {
           technician: workorder["owner"] ?? '',
           planner: workorder["supervisor"] ?? '',
           estimatedMaterialCost: workorder["estmatcost"] ?? 0.0,
-          estimatedTotalPrice: workorder["pluspwopricetotals"]["estimatedtotalprice"] ?? 0.0,
+          estimatedTotalPrice: workorder["pluspwopricetotals"][0]["estimatedtotalprice"] ?? 0.0,
+          estimatedServicePrice: workorder["pluspwopricetotals"][0]["estsrvprice"] ?? 0.0,
+          estimatedFeePrice: workorder["pluspwopricetotals"][0]["estfeeprice"] ?? 0.0,
           worktype: workorder["worktype"] ?? '',
           schedStartDate: workorder["schedstart"] != null
               ? DateTime.parse(workorder["schedstart"]).toLocal()
