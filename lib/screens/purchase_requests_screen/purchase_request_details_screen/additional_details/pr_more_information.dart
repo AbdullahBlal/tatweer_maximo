@@ -29,6 +29,14 @@ class PrMoreInformation extends StatelessWidget {
                   subtitle: Text(purchaseRequest.departmentDescription),
                 )
               : const SizedBox.shrink(),
+          ListTile(
+            title: const Text('Priority'),
+            subtitle: Text(purchaseRequest.priority.toString()),
+          ),
+          // ListTile(
+          //   title: const Text('Priority Reason'),
+          //   subtitle: Text(purchaseRequest.priorityReason),
+          // ),
           purchaseRequest.projectDescription != ''
               ? ListTile(
                   title: const Text('Project'),

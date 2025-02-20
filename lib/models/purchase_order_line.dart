@@ -13,6 +13,8 @@ class PurchaseOrderLine {
     required this.unitCost,
     required this.vat,
     required this.loadedCost,
+    required this.isDiscountApplied,
+    required this.originallineCost,
     required this.requestedByName,
     required this.storeloc,
     required this.glAccount
@@ -26,6 +28,8 @@ class PurchaseOrderLine {
   final double unitCost;
   final double vat;
   final double loadedCost;
+  final bool isDiscountApplied;
+  final double originallineCost;
   final String requestedByName;
   final String storeloc;
   final String glAccount;
@@ -40,6 +44,10 @@ class PurchaseOrderLine {
 
   String get toStringVat {
     return displayNumberFormatter.format(vat);
+  }
+
+  String get toStringOriginallineCost {
+    return displayNumberFormatter.format(originallineCost);
   }
 
   String get toStringLoadedCost {

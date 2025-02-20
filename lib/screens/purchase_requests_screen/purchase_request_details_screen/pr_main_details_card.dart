@@ -271,7 +271,7 @@ class _PRMainDetailsCardState extends ConsumerState<PRMainDetailsCard> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    const Text('EGP', style: TextStyle(fontSize: 15)),
+                    Text(widget.purchaseRequest.currencyCode, style: const TextStyle(fontSize: 15)),
                     Text(
                       widget.purchaseRequest.toStringTotalCost,
                       style: const TextStyle(fontSize: 25),

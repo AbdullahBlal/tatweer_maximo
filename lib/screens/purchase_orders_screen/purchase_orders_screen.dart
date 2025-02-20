@@ -71,7 +71,7 @@ class PurchaseOrdersScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  const Text('EGP', style: TextStyle(fontSize: 10)),
+                  Text(purchaseOrders[index].currencyCode, style: const TextStyle(fontSize: 10)),
                   Text(
                     purchaseOrders[index].toStringTotalCost,
                     style: const TextStyle(fontSize: 15),

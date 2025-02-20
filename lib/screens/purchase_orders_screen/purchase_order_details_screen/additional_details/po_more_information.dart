@@ -29,6 +29,12 @@ class PoMoreInformation extends StatelessWidget {
                   subtitle: Text(purchaseOrder.departmentDescription),
                 )
               : const SizedBox.shrink(),
+          purchaseOrder.buyer != ''
+              ? ListTile(
+                  title: const Text('Buyer'),
+                  subtitle: Text(purchaseOrder.buyer),
+                )
+              : const SizedBox.shrink(),
           purchaseOrder.projectDescription != ''
               ? ListTile(
                   title: const Text('Project'),

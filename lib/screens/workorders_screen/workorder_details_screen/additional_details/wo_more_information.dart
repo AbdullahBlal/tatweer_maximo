@@ -59,6 +59,18 @@ class WoMoreInformation extends StatelessWidget {
                   subtitle: Text(workorder.toStringSchedStartDate),
                 )
               : const SizedBox.shrink(),
+          workorder.estimatedServicePrice != 0.0
+              ? ListTile(
+                  title: const Text('Estimated Service Price'),
+                  subtitle: Text(workorder.toStringEstimatedServicePrice),
+                )
+              : const SizedBox.shrink(),
+          workorder.estimatedFeePrice != 0.0
+              ? ListTile(
+                  title: const Text('Estimated Fee Price'),
+                  subtitle: Text(workorder.toStringEstimatedFeePrice),
+                )
+              : const SizedBox.shrink(),
           workorder.reportDate != null
               ? ListTile(
                   title: const Text('Report Date'),

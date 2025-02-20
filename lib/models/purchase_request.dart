@@ -9,6 +9,8 @@ class PurchaseRequest {
     required this.prid,
     required this.prnum,
     required this.prtype,
+    required this.priority,
+    required this.priorityReason,
     required this.prtypeDescription,
     required this.description,
     required this.status,
@@ -18,6 +20,7 @@ class PurchaseRequest {
     required this.project,
     required this.projectDescription,
     required this.totalCost,
+    required this.currencyCode,
     required this.chargeToOrgnization,
     required this.vendor,
     required this.vendorDescription,
@@ -28,6 +31,8 @@ class PurchaseRequest {
 
   final int prid;
   final String prnum;
+  final int priority;
+  final String priorityReason;
   final String prtype;
   final String prtypeDescription;
   final String description;
@@ -37,6 +42,7 @@ class PurchaseRequest {
   final String departmentDescription;
   final String project;
   final String projectDescription;
+  final String currencyCode;
   final double totalCost;
   final String chargeToOrgnization;
   final String vendor;

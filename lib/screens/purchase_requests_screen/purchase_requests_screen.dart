@@ -71,7 +71,7 @@ class PurchaseRequestsScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  const Text('EGP', style: TextStyle(fontSize: 10)),
+                  Text(purchaseRequests[index].currencyCode, style: const TextStyle(fontSize: 10)),
                   Text(
                     purchaseRequests[index].toStringTotalCost,
                     style: const TextStyle(fontSize: 15),

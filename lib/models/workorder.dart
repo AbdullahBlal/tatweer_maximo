@@ -15,6 +15,8 @@ class Workorder {
     required this.schedStartDate,
     required this.estimatedMaterialCost,
     required this.estimatedTotalPrice,
+    required this.estimatedServicePrice,
+    required this.estimatedFeePrice,
     required this.department,
     required this.departmentDescription,
     required this.location,
@@ -39,6 +41,8 @@ class Workorder {
   final dynamic schedStartDate;
   final double estimatedMaterialCost;
   final double estimatedTotalPrice;
+  final double estimatedServicePrice;
+  final double estimatedFeePrice;
   final String department;
   final String departmentDescription;
   final String location;
@@ -58,6 +62,14 @@ class Workorder {
 
   String get toStringEstimatedTotalPrice {
     return displayNumberFormatter.format(estimatedTotalPrice);
+  }
+
+  String get toStringEstimatedServicePrice {
+    return displayNumberFormatter.format(estimatedServicePrice);
+  }
+
+  String get toStringEstimatedFeePrice {
+    return displayNumberFormatter.format(estimatedFeePrice);
   }
 
   String get toStringReportDate {

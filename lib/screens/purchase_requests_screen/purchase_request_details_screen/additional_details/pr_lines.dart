@@ -4,8 +4,9 @@ import 'package:accordion/accordion.dart';
 import 'package:accordion/controllers.dart';
 
 class PrLines extends StatelessWidget {
-  const PrLines({super.key, required this.prLines});
+  const PrLines({super.key, required this.prLines, required this.currencyCode});
 
+  final String currencyCode;
   final List<PurchaseRequestLine> prLines;
 
   @override
@@ -190,7 +191,7 @@ class PrLines extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
-                        const Text('EGP', style: TextStyle(fontSize: 15)),
+                        Text(currencyCode, style: const TextStyle(fontSize: 15)),
                         Text(
                           prLine.toStringLoadedCost,
                           style: const TextStyle(fontSize: 25),
